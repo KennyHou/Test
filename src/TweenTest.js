@@ -44,30 +44,31 @@ function create() {
     midGrp = game.add.group();
     frontGrp = game.add.group();
 
+    bgGrp.create(0,0,"bg");
 
-    var spotLight_01 = midGrp.create(-500,-300,"light");
-    spotLight_01.pivot.set(spotLight_01.width/2, spotLight_01.height);
-    spotLight_01.angle = 120;
-    spotLight_01.scale.set(3);
-    // spotLight_01.tint = 0xff0000
-
-    var spotLight_02 = midGrp.create(2420,-300,"light");
-    spotLight_02.pivot.set(spotLight_02.width/2, spotLight_02.height);
-    spotLight_02.angle = -120;
-    spotLight_02.scale.set(3);
-    var spotLight_03 = midGrp.create(-500,1380,"light");
-    spotLight_03.pivot.set(spotLight_03.width/2, spotLight_03.height);
-    spotLight_03.angle = 60;
-    spotLight_03.scale.set(3);
-    var spotLight_04 = midGrp.create(2420,1380,"light");
-    spotLight_04.pivot.set(spotLight_04.width/2, spotLight_04.height);
-    spotLight_04.angle = -60;
-    spotLight_04.scale.set(3);
-    var spotLight_05 = midGrp.create(0,0,"light_2");
-    spotLight_05.scale.set(4);
-
-    game.add.tween(spotLight_02).to( { tint:0xff0000 }, 2000,
-        Phaser.Easing.Linear.None, true, 0, 1000, true);
+    // var spotLight_01 = midGrp.create(-500,-300,"light");
+    // spotLight_01.pivot.set(spotLight_01.width/2, spotLight_01.height);
+    // spotLight_01.angle = 120;
+    // spotLight_01.scale.set(3);
+    // // spotLight_01.tint = 0xff0000
+    //
+    // var spotLight_02 = midGrp.create(2420,-300,"light");
+    // spotLight_02.pivot.set(spotLight_02.width/2, spotLight_02.height);
+    // spotLight_02.angle = -120;
+    // spotLight_02.scale.set(3);
+    // var spotLight_03 = midGrp.create(-500,1380,"light");
+    // spotLight_03.pivot.set(spotLight_03.width/2, spotLight_03.height);
+    // spotLight_03.angle = 60;
+    // spotLight_03.scale.set(3);
+    // var spotLight_04 = midGrp.create(2420,1380,"light");
+    // spotLight_04.pivot.set(spotLight_04.width/2, spotLight_04.height);
+    // spotLight_04.angle = -60;
+    // spotLight_04.scale.set(3);
+    // var spotLight_05 = midGrp.create(0,0,"light_2");
+    // spotLight_05.scale.set(4);
+    //
+    // game.add.tween(spotLight_02).to( { tint:0xff0000 }, 2000,
+    //     Phaser.Easing.Linear.None, true, 0, 1000, true);
 
     textAni = new TimelineMax({
         repeat: -1,
