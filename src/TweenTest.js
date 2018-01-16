@@ -64,8 +64,8 @@ function create() {
     // spotLight_04.pivot.set(spotLight_04.width/2, spotLight_04.height);
     // spotLight_04.angle = -60;
     // spotLight_04.scale.set(3);
-    // var spotLight_05 = midGrp.create(0,0,"light_2");
-    // spotLight_05.scale.set(4);
+    var spotLight_05 = midGrp.create(0,0,"light_2");
+    spotLight_05.scale.set(4);
     //
     // game.add.tween(spotLight_02).to( { tint:0xff0000 }, 2000,
     //     Phaser.Easing.Linear.None, true, 0, 1000, true);
